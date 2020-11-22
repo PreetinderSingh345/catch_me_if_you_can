@@ -1,0 +1,119 @@
+<html>
+    <head>
+
+        <title>Catch Me If You Can</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <!-- above is the link to use font-awesome CDN -->
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- above is the link to the external stylesheet -->
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!-- meta tag for adjusting the content according to the device width -->
+
+    </head>
+
+    <body>
+
+        <!-- heading container -->
+        
+        <div id="heading-container">
+
+            <!-- heading -->
+
+            <div id="heading">
+                Catch The Shape
+            </div>
+
+            <!-- shape difficulty button points container -->
+
+            <div id="shape-difficulty-button-points-container">
+
+                <!-- shape list container -->
+
+                <div id="shape-list-container" class="shape-difficulty-button-points-styling">
+
+                    <!-- shape list heading -->
+
+                    <label id="shape-list-heading" for="shape-list">Shape</label>
+
+                    <!-- shape list -->
+
+                    <select id="shape-list" class="list-styling">                
+
+                        <option value="square">square</option>
+                        <option value="circle">circle</option>
+                        <option value="rectangle">rectangle</option>
+
+                    </select>   
+
+                </div>     
+
+                <!-- difficulty list container -->
+
+                <div id="difficulty-list-container" class="shape-difficulty-button-points-styling">
+
+                    <!-- difficulty list heading -->
+
+                    <label id="difficulty-list-heading" for="difficulty-list">Difficulty</label>
+
+                    <!-- difficulty list -->
+
+                    <select id="difficulty-list" class="list-styling">                
+
+                        <option value="100">low</option>
+                        <option value="70">middle</option>
+                        <option value="40">hard</option>
+
+                    </select>   
+
+                </div>   
+
+                <!-- shape difficulty button -->
+
+                <div id="shape-difficulty-button" class="shape-difficulty-button-points-styling">
+                    Submit
+                </div>
+
+                <!-- points container containing score, points and arrow -->
+
+                <div id="points-container" class="shape-difficulty-button-points-styling">
+
+                    <span id="score">Score</span>
+                    <span id="points">0</span>
+                    <i id="arrow" class="fas fa-arrow-up"></i>
+                    
+                </div>
+                
+                <div id="mute-container">
+                    <i id="mute" class="fas fa-volume-mute"></i>     
+                    <i id="unmute" class="fas fa-volume-up"></i>           
+                </div>                
+
+            </div>
+
+        </div>
+
+        <!-- shape container -->
+
+        <div id="shape-container">
+
+            <!-- shape -->
+
+            <div id="shape" style="top: 1px; left: 1px; height: 100px; width: 100px;">
+                Catch Me!
+            </div>
+
+        </div>
+
+        <!-- audio tags for miss and hit sounds -->
+
+        <audio id="miss-sound" src="./sounds/miss.mp3"></audio>
+        <audio id="hit-sound" src="./sounds/hit.mp3"></audio>
+
+        <script type="text/javascript" src="./script.js"></script>
+        <!-- above is the link to the external stylesheet -->
+
+    </body>
+</html>
